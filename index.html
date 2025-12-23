@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +8,42 @@
     body {
       margin: 0;
       background: black;
+      color: white;
+      font-family: system-ui, sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      text-align: center;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    .question {
+      font-size: 1.8em;
+      margin-bottom: 2em;
+      letter-spacing: 0.08em;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 0.6em 1.4em;
+      margin: 0.4em;
+      min-width: 5em;
+      display: inline-block;
+    }
+    a:hover {
+      background: white;
+      color: black;
     }
   </style>
 </head>
 <body>
-  <img src="700%20UREN%20achterkaft.png" alt="">
+  <div class="question">
+    Go to the cloud?
+  </div>
+  <div>
+    <a href="700%20UREN%20achterkaft.png">Yes</a>
+    <a href="#">No</a>
+  </div>
 </body>
 </html>
